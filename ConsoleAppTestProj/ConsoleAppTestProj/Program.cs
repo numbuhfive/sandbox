@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleAppTestProj
 {
@@ -10,6 +11,12 @@ namespace ConsoleAppTestProj
     {
         static void Main(string[] args)
         {
+            if (File.Exists(@"c:\test.txt"))
+            {
+                Console.WriteLine("File found!!");
+
+            }
         }
+               
     }
 }
